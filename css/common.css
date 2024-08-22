@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+
+
+h1 {font-family: 'Beer-Goggles';  text-transform: uppercase; font-size: 64px; position: relative; color: #FFD874; margin-bottom: 55px;}
+
+h4 {font-size: 34px; text-transform: uppercase; color: #ffd874; font-family: 'Beer-Goggles'; position: relative; }
+
+h5 {font-size: 26px; color: #FFD874; font-family: 'GangwonEduPowerExtraBoldA'; position: absolute; z-index: 3; width: 220px; text-align: center; left: 10px; font-weight: normal; top: -5px; animation: animate 5s ease-in-out infinite; text-shadow: 2px 3px 3px rgba(55,142,134,0.5);}
+
+@keyframes animate {
+    0%,100% {transform: translateY(5px);}
+    50% {transform: translateY(-5px);}
+}
+
+
+/* reo resort */
+h5.reo {top: -22px; animation: animate_reo 4s ease-in-out infinite; }
+
+@keyframes animate_reo {
+    0%,100% {transform: translateY(3px);}
+    50% {transform: translateY(-3px);}
+}
+
+
+/* bubble */
+.bubble_title {position: relative; display: flex; justify-content: center; align-items: center; margin-bottom: 70px; word-break: keep-all;}
+
+
+.bubble_amorphous1 {position: absolute; width: 240px; height: 100px; border-radius: 50%; box-shadow: inset 0 0 25px rgba(50, 152,156, 0.75); animation: animate 6s ease-in-out infinite; left: 0%; }
+
+
+@keyframes animate {
+    0%,100% {transform: translateY(-10px);}
+    50% {transform: translateY(10px);}
+}
+
+
+.bubble_amorphous1 span {position: absolute; border-radius: 50%;}
+
+
+.bubble_amorphous1 span:nth-child(1) {inset: 10px; border-left: 25px solid #7ee7eb; filter: blur(10px);}
+.bubble_amorphous1 span:nth-child(2) {inset: 10px; border-right: 20px solid #7ee7eb; filter: blur(10px); }
+.bubble_amorphous1 span:nth-child(3) {inset: 10px; border-top: 6px solid #30607c; filter: blur(6px);}
+.bubble_amorphous1 span:nth-child(4) {inset: 10px; border-bottom: 35px solid #16394e; filter: blur(15px); }
+.bubble_amorphous1 span:nth-child(5) {inset: 10px; border-bottom: 5px solid #16394e; filter: blur(6px); }
+.bubble_amorphous1 span:nth-child(6) {inset: -10px; border-bottom: 20px solid #1d3436; filter: blur(6px); }
+
+.bubble_amorphous1::before {content: ""; position: absolute; width: 90px; height: 10px; background: #7ee7eb; border-radius: 50%; bottom: 0px; left: 50%; transform: translateX(-50%); z-index: 10; filter: blur(10px);}
+.bubble_amorphous1::after {content: ""; position: absolute; width: 40px; height: 7px; background: #cafdff; border-radius: 50%; bottom: -2px;  left: 50%; transform: translateX(-50%); z-index: 10; filter: blur(6px);}
+
+
